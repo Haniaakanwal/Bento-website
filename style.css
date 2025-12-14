@@ -49,6 +49,10 @@ html, body {
   padding: 0.5rem;
   border-radius: 50px;
 }
+.main header i {
+  font-size: 1.2rem;
+  padding: 0 0.3rem;
+}
 .main .left {
   grid-area: left;
   background-color: rgba(147, 143, 132, 0.582);
@@ -61,11 +65,15 @@ html, body {
   font-size: 3.5rem;
   line-height: 0.9;
 }
+.main .left h1 img {
+  height: 3rem;
+  margin-left: 2rem;
+}
 .main .left p {
   font-size: 0.9rem;
   margin-top: 8rem;
 }
-.main .box1 {
+.main .box1, .main .box2 {
   grid-area: box1;
   background-image: url(box1.jfif);
   background-position: center;
@@ -75,7 +83,7 @@ html, body {
   color: white;
   position: relative;
 }
-.main .box1 p {
+.main .box1 p, .main .box2 p {
   position: absolute;
   bottom: 0;
   padding: 1rem;
@@ -85,19 +93,6 @@ html, body {
 .main .box2 {
   grid-area: box2;
   background-image: url(box2.jfif);
-  background-position: center;
-  background-size: cover;
-  margin: 0.3rem;
-  border-radius: 2rem;
-  color: white;
-  position: relative;
-}
-.main .box2 p {
-  position: absolute;
-  bottom: 0;
-  padding: 1rem;
-  font-size: 1.5rem;
-  font-weight: 800;
 }
 .main .right {
   grid-area: right;
@@ -116,13 +111,26 @@ html, body {
 .main .right .buttons button {
   width: 13rem;
   border: none;
-  padding: 0.7rem;
+  padding: 0.8rem;
   border-radius: 50px;
   text-transform: uppercase;
   font-weight: 500;
+}
+.main .right .buttons button i {
+  background-color: black;
+  font-weight: 600;
+  color: white;
+  padding: 0.6rem;
+  border-radius: 50%;
+  margin-left: 3.3rem;
+  font-size: 1rem;
 }
 .main .right .buttons button:nth-child(2) {
   background-color: transparent;
   border: 1px solid white;
   color: white;
+}
+.main .right .buttons button:nth-child(2) i {
+  background: transparent;
+  color: rgb(255, 255, 255);
 }/*# sourceMappingURL=style.css.map */

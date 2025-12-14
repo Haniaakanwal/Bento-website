@@ -52,6 +52,10 @@ html,body{
             padding: 0.5rem;
             border-radius: 50px;
         }
+        i{
+            font-size: 1.2rem;
+            padding: 0 .3rem;
+        }
     }
     .left{
         grid-area: left;
@@ -64,6 +68,10 @@ html,body{
             font-weight: 900;
             font-size: 3.5rem;
             line-height: 0.9;
+         img{
+            height: 3rem; 
+            margin-left: 2rem;
+         }
            }
            p{
             font-size: 0.9rem;
@@ -71,7 +79,7 @@ html,body{
            }
     }
     
-    .box1{
+    .box1,.box2{
         grid-area: box1;
         background-image: url(box1.jfif);
         background-position: center;
@@ -91,19 +99,6 @@ html,body{
     .box2{
         grid-area: box2;
                 background-image: url(box2.jfif);
-        background-position: center;
-        background-size: cover;
-        margin: 0.3rem;
-        border-radius: 2rem;
-        color: white;
-        position: relative;
-        p{
-            position: absolute;
-            bottom: 0;
-            padding: 1rem;
-            font-size: 1.5rem;
-            font-weight: 800;
-        }
     }
     .right{
         grid-area: right;
@@ -122,15 +117,28 @@ html,body{
         button{
             width: 13rem;
             border: none;
-            padding: 0.7rem;
+            padding: .8rem;
             border-radius: 50px;
             text-transform: uppercase;
             font-weight: 500;
+            i{
+                background-color: black;
+                font-weight:600;
+                color: white;
+               padding: .6rem;
+               border-radius: 50%;
+               margin-left: 3.3rem;
+               font-size: 1rem
+            }
         }
         button:nth-child(2){
             background-color: transparent;
             border: 1px solid white;
             color: white;
+            i{
+                background: transparent;
+                color: rgb(255, 255, 255);
+            }
         }
         }
     }
